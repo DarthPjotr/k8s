@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whiteboard
+  labels:
+    app: whiteboard
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: whiteboard_app
+  template:
+    metadata:
+      labels:
+        app: whiteboard_app
+    spec:
+      containers:
+      - name: whiteboard
+        image: docker.io/rofl256/whiteboard:latest
+        ports:
+          - containerPort: 8080
+

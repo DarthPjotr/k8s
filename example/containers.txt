@@ -1,0 +1,5 @@
+examplevotingapp_vote:v1
+examplevotingapp_result:v1
+examplevoring_app_worker:v1
+redis
+postgresql
