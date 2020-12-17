@@ -31,4 +31,12 @@ spec:
         #- name: APP_COLOR
         #  value: green
         resources: {}
+        volumeMounts:
+        - name: foo
+          mountPath: "/mnt/secret"
+          readOnly: true
+      volumes:
+      - name: foo
+        secret:
+          secretName: webapp-secret2
 status: {}
