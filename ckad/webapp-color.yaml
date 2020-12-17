@@ -25,7 +25,7 @@ spec:
         envFrom:
           - configMapRef:
               name: webapp-color-cfg
-        # env:
+        #env:
         #- name: APP_COLOR
         #  value: green
         resources: {}
