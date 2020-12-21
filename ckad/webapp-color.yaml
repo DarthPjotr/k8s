@@ -17,6 +17,7 @@ spec:
       labels:
         app: webapp-color
     spec:
+      serviceAccount: webapp-sa
       containers:
       - image: kodekloud/webapp-color
         name: webapp-color
