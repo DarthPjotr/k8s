@@ -13,6 +13,8 @@ spec:
     - key: "spray"
       value: "ddt"
       effect: "NoExecute"
+  nodeSelector:
+    size: large
     
 
 
