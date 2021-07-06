@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-log
+spec:
+  accessModes: 
+  - ReadWriteMany
+  hostPath:
+    path: /data/log
+    type: Directory
+  persistentVolumeReclaimPolicy: Retain
+  capacity:
+    storage: 100Mi
